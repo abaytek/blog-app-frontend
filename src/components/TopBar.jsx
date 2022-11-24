@@ -47,7 +47,10 @@ function TopBar() {
           <Link to="/settings">
             <img
               className="profile"
-              src={publicFolder + user.profilePic}
+              src={
+                publicFolder + user.profilePic ||
+                "https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile-thumbnail.png"
+              }
               alt=""
             />
           </Link>
